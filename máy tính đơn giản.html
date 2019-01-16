@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    button {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        margin: 2px;
+        cursor: pointer;
+    }
+
+</style>
+<form name="calculator">
+    <input type="text" name="text" id="result" style="width: 220px; height: 30px">
+    <br>
+    <br>
+    <tr>
+    <td><button type="button" onclick="calculator.text.value +='1';">1</button></td>
+    <td><button type="button" onclick="calculator.text.value +='2';">2</button></td>
+    <td><button type="button" onclick="calculator.text.value +='3';">3</button></td>
+    <td><button type="button" onclick="calculator.text.value +='+';">+</button></td>
+    </tr>
+    <br>
+    <tr>
+    <td><button type="button" onclick="calculator.text.value +='4';">4</button></td>
+    <td><button type="button" onclick="calculator.text.value +='5';">5</button></td>
+    <td><button type="button" onclick="calculator.text.value +='6';">6</button></td>
+    <td><button type="button" onclick="calculator.text.value +='-';">-</button></td>
+    </tr>
+    <br>
+    <tr>
+    <td><button type="button" onclick="calculator.text.value +='7';">7</button></td>
+    <td><button type="button" onclick="calculator.text.value +='8';">8</button></td>
+    <td><button type="button" onclick="calculator.text.value +='9';">9</button></td>
+    <td><button type="button" onclick="calculator.text.value +='*';">*</button></td>
+    </tr>
+    <br>
+    <tr>
+    <td><button type="button" onclick="calculator.text.value ='';">C</button></td>
+    <td><button type="button" onclick="calculator.text.value +='0';">0</button></td>
+    <td><button type="button" onclick="calculator.text.value = eval(calculator.text.value);">=</button></td>
+    <td><button type="button" onclick="calculator.text.value +='/';">/</button></td>
+    </tr>
+</form>
+</body>
+</html>
